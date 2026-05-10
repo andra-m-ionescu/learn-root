@@ -8,6 +8,7 @@ RUN conda install -y -c conda-forge \
     notebook \
     numpy \
     matplotlib \
-    pandas
+    pandas && \
+    pip install mplhep
 
 RUN echo "conda activate base" >> ~/.bashrc
